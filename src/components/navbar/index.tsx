@@ -18,8 +18,15 @@ export default function Navbar() {
             <div className='logo font-semibold'>
                 NOVEL
             </div>
-            <div className='w-fit'>
-                <input className='mode-toggler flex items-center' type='checkbox' checked={theme !== 'light'} onChange={(e) => { getTheme(e) }}/>
+            <div className='flex flex-row h-full w-fit gap-5 items-center'>
+                <div className='flex flex-row gap-4 '>
+                    <div className='cursor-pointer relative flex justify-center after:absolute after:h-[2px] after:rounded after:w-0 after:hover:w-full after:transition-all after:bottom-0 after:bg-sky-400'>Home</div>
+                    <div className='cursor-pointer relative flex justify-center after:absolute after:h-[2px] after:rounded after:w-0 after:hover:w-full after:transition-all after:bottom-0 after:bg-sky-400'>Completed</div>
+                    <div className='cursor-pointer relative flex justify-center after:absolute after:h-[2px] after:rounded after:w-0 after:hover:w-full after:transition-all after:bottom-0 after:bg-sky-400'>Genre</div>
+                </div>
+                <div className='w-fit'>
+                    <input className='mode-toggler flex items-center' type='checkbox' checked={theme !== 'light'} onChange={(e) => { getTheme(e) }}/>
+                </div>
             </div>
         </div>
     </nav>
