@@ -16,7 +16,7 @@ export default function NovelCard({data}:{data:any}) {
         <img src={`/nvl${data.img_url}`} alt={`${data.title}`} className='object-cover w-full h-auto rounded'/>
         <figcaption className="w-full absolute h-full flex items-end justify-center text-[0.8rem] p-1 group-hover:bg-opacity-40 transition-all top-0 left-0" style={{zIndex: 10}}>
              <div className='bg-[#414749] p-1 rounded h-[45px] min-h-[45px] w-full bg-opacity-60 backdrop-blur transition-all flex items-center justify-center'>
-                 <span className="line-clamp-2 overflow-hidden group-hover:underline">
+                 <span className="line-clamp-2 overflow-hidden group-hover:underline text-[#e3e3e3]">
                      {data.title}
                  </span>
              </div>

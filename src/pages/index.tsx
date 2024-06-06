@@ -153,7 +153,7 @@ export default function Home() {
                 <div className="w-full h-[600px] flex flex-col">
                     <div className="w-full h-[500px] min-h-[500px] max-h-[500px] relative">
                         <Image src={bg2.src} alt="" fill style={{ objectFit: 'cover' }}/>
-                        <div className="bg-gradient-to-t from-[#e3e3e3] dark:from-[#212729] to-transparent dark:to-transparent z-30 absolute w-full h-full top-0 left-0"/>
+                        <div className="bg-gradient-to-t from-[#efefef] dark:from-[#212729] to-transparent dark:to-transparent z-30 absolute w-full h-full top-0 left-0"/>
                     </div>
                     <div className="absolute bottom-20 w-full flex-col justify-center items-center gap-4 z-40">
                         <div className="container mx-auto flex flex-col gap-4">
